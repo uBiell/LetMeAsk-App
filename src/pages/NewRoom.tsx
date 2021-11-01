@@ -20,7 +20,7 @@ export function NewRoom(){
         }
 
         const db = getDatabase()
-        const firebaseRoom = push(ref(db, "rooms/"),{
+        const firebaseRoom = await push(ref(db, "rooms/"),{
             title: newRoom,
             authorId: user?.id
         })

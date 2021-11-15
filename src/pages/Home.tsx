@@ -39,6 +39,7 @@ export function Home(){
             alert('Room already closed.')
             return
         }
+        
         history.push(`/rooms/${roomCode}`)
     }
 
